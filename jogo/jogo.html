@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Associação Diacrônica</title>
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jogo de Associação Diacrônica</h1>
+        </header>
+        <main>
+            <section class="start-screen">
+                <div class="start-content">
+                    <p>Bem-vindo ao Jogo de Associação Diacrônica! Teste seus conhecimentos sobre palavras e expressões regionais do Brasil.</p>
+                    <button class="start-button" onclick="startGame()">Iniciar Jogo</button>
+                </div>
+            </section>
+            <section class="game-screen hidden" id="gameScreen">
+                <div class="question-container">
+                    <div class="question" id="question"></div>
+                </div>
+                <ul class="options" id="options"></ul>
+                <div class="result" id="result"></div>
+            </section>
+            <section class="game-over-screen hidden" id="gameOverScreen">
+                <p id="finalScore">Parabéns! Você completou o jogo.</p>
+                <button class="restart-button" onclick="restartGame()">Reiniciar Jogo</button>
+            </section>
+        </main>
+    </div>
+    <script src="jogo.js"></script>
+</body>
+</html>
